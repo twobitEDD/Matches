@@ -1,0 +1,36 @@
+#ColorTools by Generic Evil Business Ltd.
+
+About:
+ColorTools is a collection of extensions to the Uinty API to make reasoning about color much more simple. Many seemingly simple tasks are actually incredibly difficult to solve with traditional RGB color systems.
+* How would you randomly generate only bright, vivid colors?
+* How would you figure out if two customizable player team colors are too similar?
+* How do you invert a color to get one that’s totally different?
+* How do you darken or lighten a color?
+
+All of these problems are really easy to solve with HSL colors! ColorTools can seamlessly convert colours between Unity native RGB representation and a new HSL representation. It provides loads of extension methods that help simplify reasoning about color in your code.
+Features:
+* A full ColorHSL implementation with easy conversion to and from Unity colors
+* Extension methods to make Lightening, Darkening, Desaturating, converting to Grayscale and similar operations incredibly easy.
+* Fire and forget Coroutines for animating colors over time
+* Helper methods for easily generating randomized Bright, Dark and Pastel colors
+* Photoshop style blending operations (Multiply, Screen, Overlay, Difference, Average and Negation)
+* Loads of predefined colors.
+
+
+Demo Scene:
+Assets/Generic Evil/Demo/ColorTools/Demo.unity is a small test scene showing off a bunch of features provided by ColorTools. There are three interesting C# scripts in the demo folder that illustrate ColorTools features. 
+* DemoGui.cs impalements a simple color picker window. You can use this to familiarise yourself with how the HSL parameters effect a color.
+* CubeColorRotator.cs demonstrates one way of using ColorHelper’s LerpOverTime method to animate color transitons.
+* APIExamples.cs provides example usage of most of the ColorTools API.
+
+Files:
+* GenericEvil/Utilites/Colors.cs - This provides a large number of premade Color definitons.
+* GenericEvil/Utilites/ColorHSL.cs - An implementation of the HSL color space.
+* GenericEvil/Utilites/ColorExtentions.cs - Extention methods adding new functionality to Unitys Color struct
+* GenericEvil/Utilites/ColorHelper.cs - Static helper methods
+
+Version History
+v1.0 x Initial Release
+
+Support:
+Need help? Got feedback? Send us an email! hello@genericevil.com
